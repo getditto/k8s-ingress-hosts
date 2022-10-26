@@ -23,7 +23,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
-        goversion: 1.16
+        goversion: 1.19
         binary_name: "k8s-ingress-hosts"
         ldflags: -s -w -X main.version=${RELEASE_TAG}
         extra_files: LICENSE README.md
